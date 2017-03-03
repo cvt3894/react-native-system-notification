@@ -178,7 +178,7 @@ public class Notification {
       } catch (Exception e) {
         Log.e("ReactSystemNotification", "Error when getting image from URL" + e.getStackTrace());
       }
-      notificationBuilder.setLargeIcon(getCircleBitmap(largeIcon));
+      notificationBuilder.setLargeIcon(largeIcon);
     }
     
     if (attributes.group != null) {
